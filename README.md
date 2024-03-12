@@ -1,2 +1,9 @@
-# Prueba-Mamma-Mia
-La pizzería italiana Mamma Mia! SPA le solicita realizar su aplicación web para mostrar y vender sus pizzas. Esta app deberá mostrar los distintos tipos de pizzas y sus ingredientes.
+# Prueba Mamma Mia!.
+# Se crea una app para la gestion de pedidos de pizzas con React.
+# En el Home se muestran todas las pizzas disponibles.
+# Se agrega un boton de "ver mas" para acceder al detalle de la piazza y otro boton "anadir" para agregarla al carrito.
+# En la vita individual, se muestra el detalle y tambien la posibilidad de anadirla al carrito.
+# Se utiliza react router para el manejo de rutas y rediccionamientos.
+# /Home /pizza/:id /cart.
+# Se utiliza context API para el estado global relacionado con el carritor de compras. Se define en CartContext.jsx y se importan en HomePage, PizzaDetails y Cart.
+# Se calcula el valor total de las pizzas seleccionadas, ya sean en Home o en la vista del carrito. 
