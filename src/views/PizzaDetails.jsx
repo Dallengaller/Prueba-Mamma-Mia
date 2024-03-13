@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Card, ListGroup, Button } from 'react-bootstrap';
-import { CartContext } from '../components/CartContext'; // Importa CartContext
+import { CartContext } from '../components/CartContext';
 
 const PizzaDetails = () => {
   const { id } = useParams();
   const [pizza, setPizza] = useState(null);
-  const { addToCart } = React.useContext(CartContext); // Usa el contexto
+  const { addToCart } = React.useContext(CartContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,7 +49,6 @@ const PizzaDetails = () => {
           <Button variant="danger" onClick={() => addToCart(pizza)}>
             Añadir 🛒
           </Button>
-          {/* Otros detalles de la pizza, si es necesario */}
         </ListGroup>
       </Card>
     </Container>
